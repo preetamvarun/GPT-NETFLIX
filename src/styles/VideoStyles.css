@@ -1,0 +1,148 @@
+.videoDetails {
+    display: inline-block;
+    position: absolute;
+    top : 50%;
+    left : 2%;
+    z-index : 10;
+    transform: translateY(-50%);
+    width : 45%;
+}
+
+.videoDetails > p:first-child {
+    font-size : 4.5rem;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+.videoDetails > p:nth-child(2){
+    font-size: 1.3rem;
+    margin : .45rem 0rem;
+    line-height: 1.5rem;
+    word-spacing: 2px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75); 
+    font-weight: 400;
+}
+
+.videoDetails .btns {
+    margin-top : 1rem;
+    display: inline-block;
+}
+
+.videoDetails .play, .videoDetails .moreInfo {
+    color : black;
+    background-color: white;
+    position: relative;
+    display: inline-block;
+    padding : .7rem 2.75rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 6px;
+}
+
+.videoDetails .play:hover{
+    cursor: pointer;
+}
+
+.videoDetails .moreInfo:hover{
+    background-color: #6d726359;
+    cursor: pointer;
+}
+
+.videoDetails .play::before {
+    position: absolute;
+    content: '▶';
+    left : 15%;
+    top : 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+}
+
+.videoDetails .play {
+    margin-right : .75rem;
+}
+
+
+.videoDetails .moreInfo {
+    background-color: #6D7263;
+    color : white;
+}
+
+
+@media(min-width : 1025px) {
+    .videoDetails {
+        width : 48%;
+    }
+}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:961px) and (max-width : 1025px) {
+    .videoDetails {
+        width: 68%;
+    }
+    .videoDetails > p:first-child {
+        font-size: 3.75rem;
+    }
+    .videoDetails > p:nth-child(2) {
+        font-size: 1.1rem;
+    }
+}
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width:641px) and (max-width : 961px)  { 
+    .videoDetails {
+        width : 75%;
+    }
+    .videoDetails > p:first-child {
+        font-size : 3.25rem;
+    }
+    .videoDetails > p:nth-child(2) {
+        font-size: .85rem;
+    }
+    .videoDetails .play::before {
+        font-size: 1rem;
+    }
+    .videoDetails .play, .videoDetails .moreInfo {
+        padding : .5rem 2.35rem;
+        font-size: 1.25rem;
+    }
+}
+
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width:481px) and (max-width : 641px) {
+    .videoDetails {
+        width : 77%;
+    }
+    .videoDetails > p:first-child {
+        font-size : 3.2rem;
+    }
+    .videoDetails > p:nth-child(2) {
+        font-size: .8rem;
+    }
+    .videoDetails .play::before {
+        font-size: .9rem;
+    }
+    .videoDetails .play, .videoDetails .moreInfo {
+        padding : .4rem 2.25rem;
+        font-size: 1.15rem;
+    }
+}
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:320px) and (max-width : 481px) { 
+    .videoDetails {
+        width : 90%;
+    }
+    .videoDetails > p:first-child {
+        font-size : 1.25rem;
+    }
+    .videoDetails > p:nth-child(2) {
+        font-size: .8rem;
+    }
+    .videoDetails .play::before {
+        font-size: .7rem;
+    }
+    .videoDetails .play, .videoDetails .moreInfo {
+        padding : .2rem 2rem;
+        font-size: 1rem;
+    }
+}

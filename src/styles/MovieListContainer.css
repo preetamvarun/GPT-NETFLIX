@@ -1,0 +1,44 @@
+
+.movieSet {
+    display: flex;
+    overflow-x: scroll;
+}
+
+
+.movies {
+    margin : 2rem 0rem 2rem 1.75rem;
+}
+
+.movies p{
+    margin : 0rem 0rem .5rem .6rem;
+    font-size : 1.2rem;
+    font-weight: 400;
+}
+
+.eachMovie {
+    position: relative;
+    height : 140px;
+    width : 240px;
+    /* This will not let eachmovie to decrease the width even if we put display : flex in movieSet class */
+    flex-shrink: 0;
+    margin: 0rem .45rem;
+    transition: all 300ms ease;
+}
+
+
+.eachMovie > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.eachMovie:hover{
+    cursor: pointer;
+}
+
+#nowPlaying {
+    position: relative;
+    margin-top: -70px;
+    z-index: 10;
+}

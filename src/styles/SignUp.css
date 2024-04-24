@@ -1,0 +1,146 @@
+.mainContainer {
+    background : url('../images//SignUpBackgroundImage.jpg') no-repeat center center/cover;
+    height : 100vh;
+    position: fixed;
+    width: 100%;
+    position: relative;
+}
+
+
+/*
+Don't want the background image to disappear when position is absolute so mainContainer postion is
+fixed and set the width 100%. 
+*/
+
+.formContainer {
+    position: absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    padding : 0rem 1rem;
+    background-color: rgba(0, 0, 0, 0.735);
+    border-radius: 5px;
+    padding : 0rem 2.75rem;
+    color : white;
+}
+
+ 
+ /* big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) {
+    .formContainer {
+        width : 400px;
+    }
+}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:961px)  {
+    .formContainer {
+        width: 400px;
+    }
+}
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width:641px)  { 
+    .formContainer {
+        width: 400px;
+    }
+}
+
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width:481px)  {
+    .formContainer {
+        width: 400px;
+    }
+}
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:320px)  { 
+    .formContainer {
+        width : 360px;
+    }
+}
+
+.formContainer form{
+    position: relative;
+    top : 8%;
+    display: block;
+}
+
+.formContainer h1{
+    margin-top : 1rem;
+}
+
+.formContainer h1, p {
+    color : white;
+    position: relative;
+    top : 7%;
+}
+
+
+.netflixLogo {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.575);
+    height : 80px;
+    width : 200px;
+}
+
+.formContainer p{
+    margin: 1rem 0rem 1.25rem 0.2rem;
+    font-weight: 600;
+}
+
+.formContainer span {
+    color : #e50b16;
+    font-weight: 600;
+    margin-bottom: .45rem;
+    font-size : .95rem;
+    margin-left : .56rem;
+    margin-top : 0.4rem;
+}
+
+.formContainer p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.formContainer button {
+    background-color : #cb1019;
+    color : white;
+    border : none;
+    width: 100%;
+    padding : .5rem .25rem;
+    font-size : 1.02rem;
+    border-radius : 4px;
+    margin-top : 1.25rem;
+}
+
+.formContainer button:hover{
+    background-color : #f5010ee1;
+}
+
+.formContainer button:hover{
+    cursor: pointer;
+}
+
+.formContainer form input {
+    border : none;
+    display: block;
+    width: 100%;
+    margin : 1.2rem 0rem 0rem 0rem;
+    padding : 1.05rem .75rem;
+    border-radius : 2px;
+    background-color: #151312c7;
+    color : white;
+    font-size : 1.03rem;
+}
+
+.formContainer form input::placeholder {
+    font-size : .85rem;
+}
+
+/* When focus there won't be any outlines across the input box */
+.formContainer form input:focus{
+    outline : none;
+}
+

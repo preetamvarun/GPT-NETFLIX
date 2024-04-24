@@ -1,0 +1,84 @@
+.Header {
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s ease; /* Add smooth transition */
+}
+
+.languageOptions {
+    border : none;
+    margin-right: 1rem;
+    padding : .7rem 1.75rem;
+    background-color: rgba(0, 0, 0, 0.785);
+    color : #fff;
+    border-radius: 5px;
+}
+
+option {
+    color : white;
+}
+
+.searchBtn {
+    margin-right: 1rem;
+    color : #fff;
+    font-weight: bolder;
+    padding : .5rem 2rem;
+    background-color: rgba(0, 0, 0, 0.452);
+    transition: all 300ms ease;
+    border-radius: 5px;
+}
+
+.searchBtn:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+    color : red;
+}
+
+.scrolled {
+    background-color: rgba(0, 0, 0, 0.568); /* Change background color when scrolled */
+    color: white; /* Adjust text color for better visibility */
+  }
+
+.Header > img {
+    height : 70px;
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.Header .signOut {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.Header .signOut button {
+    border : none;
+    padding : .5rem 1.45rem;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.326);
+    color : white;
+}
+
+.Header .signOut button:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.594);
+}
+
+.Header p{
+    color : white;
+}
+
+/* Writing Media Queries for Header section */
+
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:320px) and (max-width : 540px)  { 
+    .Header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
