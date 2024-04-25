@@ -27,3 +27,5 @@ bugs.txt
 dummy.js
 
 .env
+
+netlify/

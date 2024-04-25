@@ -6,4 +6,3 @@ export const gptApi = new OpenAI({
     apiKey : GPT_API_KEY,
     dangerouslyAllowBrowser : true
 });
-

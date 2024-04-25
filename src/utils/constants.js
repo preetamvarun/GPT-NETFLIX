@@ -1,3 +1,4 @@
+
 export const API_KEY = process.env.REACT_APP_API_KEY;
 
 export const TMDB_GETMOVIES_API = "https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1";
@@ -29,7 +30,6 @@ export const options = {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      // Authorization : 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmYjA4MTUwMTYyYWU4OWU5MzM3MzU2MWUzOGFjZWQwMyIsInN1YiI6IjY2MjI4NTQ2Y2NkZTA0MDE2NDA1ZTExNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.HiNerRZJZpg2kUVkkOzvcPOPlPbYEXHVk7e1Eae0PPo'
       Authorization : 'Bearer '+process.env.REACT_APP_ACCESS_TOKEN
     }
 };
